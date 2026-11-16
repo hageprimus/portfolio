@@ -37,6 +37,11 @@ public class CreditCard implements Valuable {
 
     @Override
     public double getValue() {
-        return 0;
+        return balance;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s: Valued at %,.2f", getName(), getValue());
     }
 }

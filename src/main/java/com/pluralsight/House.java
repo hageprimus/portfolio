@@ -38,6 +38,6 @@ public class House extends Asset {
 
     @Override
     public double getValue() {
-        return super.getValue();
+        return squareFeet * marketValue + (bedrooms * (0.25 * marketValue));
     }
 }

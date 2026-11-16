@@ -18,6 +18,6 @@ public class Gold extends Asset {
 
     @Override
     public double getValue() {
-        return super.getValue();
+        return weight * marketValue;
     }
 }

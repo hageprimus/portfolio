@@ -24,4 +24,9 @@ public abstract class Asset implements Valuable {
     public double getValue() {
         return marketValue;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s, %,.2f", getName(), getValue());
+    }
 }

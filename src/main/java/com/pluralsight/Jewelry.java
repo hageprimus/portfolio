@@ -18,6 +18,6 @@ public class Jewelry extends Asset {
 
     @Override
     public double getValue() {
-        return super.getValue();
+        return karat * (0.5 * marketValue);
     }
 }
